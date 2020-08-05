@@ -1,4 +1,4 @@
-#Return two prime numbers solution
+//Return two prime numbers solution
 
 
 #include <iostream>
