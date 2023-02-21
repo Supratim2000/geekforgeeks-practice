@@ -1,3 +1,6 @@
+//Using Extra Space
+//Time complexity:- O(N*M)
+//Spcae complexity:- O(N*M)
 class Solution{   
 public:
     int minIteration(int N, int M, int x, int y){    
@@ -29,5 +32,15 @@ public:
             count++;
         }
         return count-1;
+    }
+};
+
+//Without Using Extra Space
+//Time complexity:- O(1)
+//Spcae complexity:- O(1)
+class Solution{   
+public:
+    int minIteration(int N, int M, int x, int y){    
+        return max(max(x+y-2,y+N-1-x),max(x+M-y-1,N-x+M-y));
     }
 };
